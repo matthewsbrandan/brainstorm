@@ -23,3 +23,26 @@ button{
   --light: #fff;
   --light: #bbb;
 }
+
+main{
+  background: var(--background);
+
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-areas: 'SIDEBAR CONTAINER';
+  grid-template-columns: 4.5rem auto;
+}
+
+aside{ grid-area: SIDEBAR; }
+.container{ grid-area: CONTAINER; }
+
+@media(max-width: 500px){
+  main{
+    grid-template-columns: 1fr;
+    grid-template-rows: 4.5rem auto;
+    grid-template-areas: 'SIDEBAR' 'CONTAINER';
+  }
+}
