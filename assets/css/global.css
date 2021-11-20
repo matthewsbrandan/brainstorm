@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+button{
+  background: transparent;
+  border: none;
+}
+
+:root{
+  --background: #161c21;
+  --background-secondary: #2C2C30;
+  --primary: #15E9DA;
+  --danger: #FD5D5C;
+  --light: #fff;
+  --light: #bbb;
+}

@@ -1,0 +1,16 @@
+body{
+  background: #333333;
+  color: #bbc;
+
+  h1{
+    color: #f32;
+
+    span{
+      color: #f9cb28;
+
+      &:hover{
+        color: #acf;
+      }
+    }
+  }
+}
