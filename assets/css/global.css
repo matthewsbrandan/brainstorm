@@ -17,11 +17,12 @@ button{
 
 :root{
   --background: #161c21;
-  --background-secondary: #2C2C30;
+  --background-secondary: #1F272F;
   --primary: #15E9DA;
-  --danger: #FD5D5C;
-  --light: #fff;
-  --light: #bbb;
+  --danger: #ff4444;
+  --gray: #667;
+  --light: #ddd;
+  --muted: #99a3;
 }
 
 main{
@@ -36,7 +37,7 @@ main{
   grid-template-columns: 4.5rem auto;
 }
 
-aside{ grid-area: SIDEBAR; }
+aside{ grid-area: SIDEBAR; background: var(--light); }
 .container{ grid-area: CONTAINER; }
 
 @media(max-width: 500px){
