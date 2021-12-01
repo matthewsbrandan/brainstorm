@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FLEXBOX</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/flex.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <h1 style="text-align: center;">FLEXBOX</h1>
+    <nav id="navbar-main">
+      <button type="button" onclick="toggleSection('#section-flex')">FLEX</button>
+      <button type="button" onclick="toggleSection('#section-nav')">NAVS</button>
+    </nav>
+    <section id="section-flex">
+      <div class="elements" id="element-1">
+        <strong>FLEX-START</strong>
+        <div class="wrapper">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+      <div class="elements" id="element-2">
+        <strong>FLEX-END</strong>
+        <div class="wrapper">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+      <div class="elements" id="element-3">
+        <strong>CENTER</strong>
+        <div class="wrapper">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+      <div class="elements" id="element-4">
+        <strong>SPACE-BETWEEN</strong>
+        <div class="wrapper">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+      <div class="elements" id="element-5">
+        <strong>SPACE-AROUND</strong>
+        <div class="wrapper">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+      <div class="elements" id="element-6">
+        <strong>SPACE-EVENLY</strong>
+        <div class="wrapper">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+    </section>
+    <section id="section-nav">
+      <h1>Nav</h1>
+    </section>
+  </main>
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
+  <script src="../script.js"></script>
+  <script>
+    function toggleSection(id){
+      $('section').hide('slow');
+      $(id).show('slow');
+    }
+  </script>
+</body>
+</html>

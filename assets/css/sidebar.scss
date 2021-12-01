@@ -1,7 +1,60 @@
 .sidebar {
-  background-color: #fff;
+  background: var(--background-secondary);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  max-height: 100vh;
+
   .logo {
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .6s;
+
+    svg{
+      fill: var(--light) !important;
+    }
+
+    &:hover{
+      background: #eefd;
+
+      svg{
+        fill: var(--background-secondary) !important;
+      }
+    }
   }
+
   .navbar {
+    width: 100%;
+
+    .nav-link{
+      cursor: pointer;
+      padding: 1rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: .6s;
+    
+      svg{
+        fill: var(--light) !important;
+      }
+
+      &:hover{
+        background: #eefd;
+
+        svg{
+          fill: var(--background-secondary) !important;
+        }
+      }
+    }
   }
 }
