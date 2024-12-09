@@ -6,6 +6,3 @@
 ## DEVELOPED BY
   - Mateus Brandão
   - Fillipe Alves
-
-## RETOMADA DE PROJETO
-  - Dezembro 2024
